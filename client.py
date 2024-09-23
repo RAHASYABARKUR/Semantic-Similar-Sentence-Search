@@ -1,3 +1,5 @@
+import sys
+
 from flask_ml.flask_ml_client import MLClient
 from flask_ml.flask_ml_server.constants import DataTypes
 
@@ -8,11 +10,10 @@ client = MLClient(
     TEXT_CLUSTERING_MODEL_URL
 )  # Create an instance of the MLClient object
 
+sample_text = sys.argv[1]
 inputs = [
-    {
-        "text": "I am a little confused on all of the models of the 88-89 bonnevilles. I have heard of the LE SE LSE SSE SSEI. Could someone tell me the differences are far as features or performance. I am also curious to know what the book value is for prefereably the 89 model. And how much less than book value can you usually get them for. In other words how much are they in demand this time of year. I have heard that the mid-spring early summer is the best time to buy."
-    },
-    # {"text": "Another text to be classified"},
+    {"text": sample_text},
+    # {"text": "I am a little confused on all of the models of the 88-89 bonnevilles. I have heard of the LE SE LSE SSE SSEI. Could someone tell me the differences are far as features or performance. I am also curious to know what the book value is for prefereably the 89 model. And how much less than book value can you usually get them for. In other words how much are they in demand this time of year. I have heard that the mid-spring early summer is the best time to buy."},
 ]  # The inputs to be sent to the server
 data_type = DataTypes.TEXT  # The type of the input data
 

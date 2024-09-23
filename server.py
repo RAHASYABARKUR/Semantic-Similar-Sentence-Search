@@ -11,9 +11,9 @@ from clusteringKMeans import Kmeans
 
 class Test:
     def predict(self, data: list) -> list:
-        print("Started Prediction")
+        print("Started Loading the Pre Encoded Data")
         input_data = pd.read_pickle("EncodedDataset\\Train.pkl")
-        print("Read the saved data")
+        print("Sucessfully Loaded the Encoded Train data")
         return Kmeans(input_data, data[0])
 
 
@@ -24,10 +24,10 @@ server = MLServer(__name__)
 
 @server.route("/textclusteringmodel", DataTypes.TEXT)
 def process_text(inputs: list[TextInput], parameters: dict):
-    print(inputs)
+    # print(inputs)
     results = model.predict(inputs)
     results = [TextResult(text=e.text, result=r) for e, r in zip(inputs, results)]
-    print(results)
+    # print(results)
     response = ResponseModel(results=results)
     return response.get_response()
 

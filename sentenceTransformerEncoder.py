@@ -14,4 +14,8 @@ def encode(TrainDf, TestDf):
 
 def encodeSentence(message):
     model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
-    return model.encode(message, convert_to_numpy=True).flatten().reshape(1, -1)
+    return (
+        model.encode(message, convert_to_numpy=True, clean_up_tokenization_spaces=True)
+        .flatten()
+        .reshape(1, -1)
+    )
