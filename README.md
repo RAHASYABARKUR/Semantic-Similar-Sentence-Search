@@ -4,4 +4,4 @@ This project is part of Individual project done as a part of Independent Study u
 ## Dependencies
 To install dependencies execute the following command
 
-    pip -r requirements.txt
+    pip install -r requirements.txt
