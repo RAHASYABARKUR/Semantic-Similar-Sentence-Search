@@ -1,5 +1,6 @@
-from sklearn.cluster import KMeans
 import numpy as np
+from sklearn.cluster import KMeans
+
 from sentenceTransformerEncoder import encodeSentence
 
 n_clusters = 20

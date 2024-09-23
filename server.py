@@ -1,12 +1,10 @@
+import os
+
+import pandas as pd
 from flask_ml.flask_ml_server import MLServer
 from flask_ml.flask_ml_server.constants import DataTypes
-from flask_ml.flask_ml_server.models import (
-    ResponseModel,
-    TextInput,
-    TextResult,
-)
-import pandas as pd
-import os
+from flask_ml.flask_ml_server.models import (ResponseModel, TextInput,
+                                             TextResult)
 
 from clusteringKMeans import Kmeans
 

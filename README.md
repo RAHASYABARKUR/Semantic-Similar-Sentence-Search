@@ -2,7 +2,7 @@
 This project is part of Individual project done as a part of Independent Study under Brian Levine and Prasanna Kumar. 
 
 
-![Architecture](images/Algorithm flowchart example.png)|
+![Architecture](images/Algorithm.png)|
 |:--:|
 | <b> Fig.1 - Architecture</b>|
 

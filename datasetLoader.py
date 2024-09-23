@@ -1,8 +1,9 @@
-import pandas as pd
-from sklearn.datasets import fetch_20newsgroups
 import re
+
 import nltk
+import pandas as pd
 from nltk.corpus import stopwords
+from sklearn.datasets import fetch_20newsgroups
 
 nltk.download("punkt_tab")
 nltk.download("stopwords")
