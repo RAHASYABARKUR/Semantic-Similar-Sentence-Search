@@ -1,4 +1,4 @@
-# TextClustering596E
+# Semantically Similar Sentences Search
 The project aims to develop a search tool for sentences that are semantically similar. The process currently uses publicly available UCI's News20 Dataset. The dataset is cleaned, encoded using Mini LM Transformer and then clustered using KMeans. The client provides a sample text, which is similarly encoded and semantic value is predicted with the help of the pre-trained Kmeans. The semantic value of this text is used to find all the sentences in the database with similar semantic values.
 
 This project is part of an Independent Study under the supervision of Brian Levine and Prasanna Lakkur Subramanyam. 
