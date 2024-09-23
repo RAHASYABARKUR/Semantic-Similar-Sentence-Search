@@ -10,13 +10,14 @@ import os
 
 from clusteringKMeans import Kmeans
 
+
 class Test:
-    def predict(self,data:list) ->list:
+    def predict(self, data: list) -> list:
         print("Started Prediction")
         input_data = pd.read_pickle("EncodedDataset\\Train.pkl")
         print("Read the saved data")
-        return Kmeans(input_data,data[0])
-        
+        return Kmeans(input_data, data[0])
+
 
 model = Test()
 
@@ -32,7 +33,5 @@ def process_text(inputs: list[TextInput], parameters: dict):
     response = ResponseModel(results=results)
     return response.get_response()
 
+
 server.run()
-
-
-
