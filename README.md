@@ -27,9 +27,9 @@ To evaluate the clustring process please run the server and client in two differ
 If you find our work useful in your research, please consider citing:  
 
     @misc{twenty_newsgroups_113,
-  author       = {Mitchell, Tom},
-  title        = {{Twenty Newsgroups}},
-  year         = {1997},
-  howpublished = {UCI Machine Learning Repository},
-  doi          = {10.24432/C5C323}
-    }
+          author       = {Mitchell, Tom},
+          title        = {{Twenty Newsgroups}},
+          year         = {1997},
+          howpublished = {UCI Machine Learning Repository},
+          doi          = {10.24432/C5C323}
+         }
