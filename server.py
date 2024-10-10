@@ -12,7 +12,7 @@ from clusteringKMeans import Kmeans
 class Test:
     def predict(self, data: list) -> list:
         print("Started Loading the Pre Encoded Data")
-        input_data = pd.read_pickle("EncodedDataset\\Train.pkl")
+        input_data = pd.read_pickle("EncodedDataset/Train.pkl")
         print("Sucessfully Loaded the Encoded Train data")
         return Kmeans(input_data, data[0])
 
