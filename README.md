@@ -28,6 +28,7 @@ To test a sample statement. Please run the following command in a new terminal (
     python client.py "text_message" 
     # (For Example run -> python client.py "I am a little confused on all of the models of the 88-89 bonnevilles. I have heard of the LE SE LSE SSE SSEI. Could someone tell me the differences are far as features or performance. I am also         curious to know what the book value is for prefereably the 89 model. And how much less than book value can you usually get them for. In other words how much are they in demand this time of year. I have heard that the mid-spring             early summer is the best time to buy.")
 
+This generates an output excel file called "Clustered.xlsx" which scrapes all the text statements from the database that are related to the sample statement provided by client. The columns ['target','Labels'] is the groundtruth in the dataset. Column['Encoded'] is th embeddings of the text denerated as part of the process and column['Prediction'] is this models prediction.  
 ## Citation
 If you find our work useful in your research, please consider citing:  
 
