@@ -18,5 +18,5 @@ inputs = [
 data_type = DataTypes.TEXT  # The type of the input data
 
 response = client.request(inputs, data_type)  # Send a request to the server
-# print("Text Clustering Model Response:")
-# print(response)  # Print the response
+print("Text Clustering Model Response:")
+print(response)  # Print the response
